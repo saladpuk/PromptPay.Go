@@ -13,6 +13,8 @@ creditInfo := &promptpay.CreditTransfer{
 qrCode1 := promptpay.CreateCreditTransferQrCode(creditPayload, creditInfo)
 fmt.Println("CreditTransfer: " + qrCode1)
 ```
+> **Output**  
+CreditTransfer: 0002010102125802TH5303764540550.0029370016A00000067701011101130066914185401630461EF
 
 ## สร้างการจ่ายเงินด้วย Tag 30 (Bill Payment)
 ```go
@@ -28,3 +30,5 @@ billInfo := &promptpay.BillPayment{
 qrCode2 := promptpay.CreateBillPaymentQrCode(billPayload, billInfo)
 fmt.Println("BillPayment: " + qrCode2)
 ```
+> **Output**  
+BillPayment: 0002010102125802TH5303764540550.0030510016A000000677012006011901150105523009350080204TestD0B8
